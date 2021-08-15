@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h2> Editar medicamentos</h2>
+<form method="post" action="#" th:object="${medicamento}" th:action="@{/salvar}">
+    Id <input type="text" readonly  name="id" th:field="*{id}"> <br />
+    Nome <input type="text" name="nome" th:field="*{nome}"> <br />
+    Dosagem <input type="text" name="dosagem" th:field="*{dosagem}"> <br />
+    Classificacao <input type="text" name="classificacao" th:field="*{classificacao}"> <br />
+    Preco <input type="text" name="preco" th:field="*{preco}"> <br />
+    <button type="submit">Cadastrar</button>
+</form>
+</body>
+</html>
